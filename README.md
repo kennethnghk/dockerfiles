@@ -10,6 +10,8 @@ Docker files for different applications
 docker build -t <repository>/<tag> .
 ```
 
+`-f` : Name of dockerfile
+
 * View all containers
 
 ```
@@ -28,4 +30,17 @@ docker images
 docker run --name <container name> -it <image>
 ```
 
-The `-it` instructs Docker to allocate a pseudo-TTY connected to the container’s stdin; creating an interactive bash shell in the container. 
+`-it` : Instructs Docker to allocate a pseudo-TTY connected to the container’s stdin; creating an interactive bash shell in the container. 
+
+`-d` : Run in detached (background) mode
+
+* Stop container
+
+```
+docker stop <container>
+```
+
+## Dockerfile
+
+* `ENTRYPOINT`
+An ENTRYPOINT allows you to configure a container that will run as an executable.
